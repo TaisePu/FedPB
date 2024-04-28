@@ -42,6 +42,6 @@ We provide train strategy with broken datasets. You can change the options.py to
 
 # Draw
 We provide .opju file in Results, all results in paper's figure are recorded in this file.
-![Local Image](./Figures/Figure4.png)
-![Local Image](./Figures/Figure5.png)
+![Local Image]([./Figures/Figure4.png](https://github.com/TaisePu/FedPB/blob/main/Figures/Figure4.png))
+![Local Image]([./Figures/Figure5.png](https://github.com/TaisePu/FedPB/blob/main/Figures/Figure5.png))
 # Citation

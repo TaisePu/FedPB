@@ -36,6 +36,8 @@ python main.py --datasets_name 'pubmeddiabetes'
 
 '''
 
+Results can be found in ./Results
+
 We provide train strategy with broken datasets. You can change the options.py to rereproduce other strategy.
 
 # Acknowledgments

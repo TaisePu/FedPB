@@ -3,14 +3,20 @@
 
 # Prerequisite
 NVIDIA 4090
+
 NVIDIA Driver 520.56.06
+
 Python 3.8.0
+
 CUDA 11.8
+
 Torch 2.0.1
 
 # Datasets
 Cora：The processed .zip file can be download in this link.
+
 Citeseer：The processed .zip file can be download in this link.
+
 Pubmeddiabetes：The processed .zip file can be download in this link.
 
 download datasets .zip file to ./Folder then unzip it.
@@ -22,7 +28,9 @@ Please using folowing commands to train a model with federated learning strategy
 
 '''bash
 python main.py --datasets_name 'cora'
+
 python main.py --datasets_name 'citeseer'
+
 python main.py --datasets_name 'pubmeddiabetes'
 '''
 

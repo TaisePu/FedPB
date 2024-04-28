@@ -13,11 +13,11 @@ CUDA 11.8
 Torch 2.0.1
 
 # Datasets
-Cora：The processed .zip file can be download in this link.
+Cora：The processed .zip file can be download in this [link](https://drive.google.com/file/d/1x33NTyMZ9OdSo6Uk-2LL6r2_VTJ1ZKzA/view?usp=drive_link).
 
-Citeseer：The processed .zip file can be download in this link.
+Citeseer：The processed .zip file can be download in this [link](https://drive.google.com/file/d/1G--eb13nfEa4X8NhW4Z6kQ__GWawKA30/view?usp=drive_link).
 
-Pubmeddiabetes：The processed .zip file can be download in this link.
+Pubmeddiabetes：The processed .zip file can be download in this [link](https://drive.google.com/file/d/1W5onFRDemqgzQDOOl23yqQcnpb6vuoeY/view?usp=drive_link).
 
 download datasets .zip file to ./Folder then unzip it.
 

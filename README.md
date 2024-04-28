@@ -27,11 +27,13 @@ Federated Learning
 Please using folowing commands to train a model with federated learning strategy.
 
 '''bash
+
 python main.py --datasets_name 'cora'
 
 python main.py --datasets_name 'citeseer'
 
 python main.py --datasets_name 'pubmeddiabetes'
+
 '''
 
 We provide train strategy with broken datasets. You can change the options.py to rereproduce other strategy.

@@ -1,5 +1,4 @@
 import copy
-
 import torch
 import numpy as np
 from sklearn import preprocessing
@@ -8,9 +7,7 @@ from Client.Client_PB import Client
 from tqdm import tqdm
 from Utils.log import log
 
-
 times = 0
-
 
 def fedpb(args, graph, node_subjects, local_graph,
             local_subj, local_target, local_nodes_ids):
@@ -22,6 +19,8 @@ def fedpb(args, graph, node_subjects, local_graph,
     server = Server(args, graph, node_subjects)
     list_clients = [Client(args, local_graph[i], local_subj[i], local_target[i], num_classes) for i in range(args.num_clients)]
 
+    # participant relationship contruction
+    # participant & alliance
     list_pre_features = []
     list_filled_graphs = []
     for client in list_clients:
@@ -35,14 +34,11 @@ def fedpb(args, graph, node_subjects, local_graph,
         adj = client.get_adj(edges, len(client.graph_sg.nodes())).cuda()
         pred_missing, pred_feats, pre_target = client.neighborhood_gen_model2(faeture, edges.cuda(), adj)
 
-        # tmp = pred_feats.cpu()
-        # tmp_feature = tmp.detach().numpy().tolist()
         tmp_feature = pred_feats.reshape((-1, args.num_pred_node, client.hided_feature_len))
         tmp = tmp_feature.cpu()
         tmp_feature = tmp.detach().numpy().tolist()
         list_pre_features.append(tmp_feature)
 
-        # pre_target = pre_target.view(len(pred_missing) * (args.num_pred_node+1), args.num_classes)
         filled_nodes, filled_graph = client.fill_graph(args, pred_missing, pred_feats, client.hided_feature_len)
         list_filled_graphs.append(filled_graph)
 

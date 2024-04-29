@@ -24,7 +24,7 @@ download datasets .zip file to ./Folder then unzip it.
 # Train
 Federated Learning
 
-Please using folowing commands to train a model with federated learning strategy.
+Please using following commands to train a model with federated learning strategy.
 
 '''bash
 

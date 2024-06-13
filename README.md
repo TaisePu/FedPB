@@ -1,5 +1,5 @@
 # FedPB
- Correction Code for paper: FedPB Parameter Broadcasting on Participant Graph for Federated Learning on Heterogeneous Graph. - submission ICPP 2024
+ Correction Code for paper: FedPB Parameter Broadcasting on Participant Graph for Heterogeneous Graph Mining in Federated Learning. - submission ICDM 2024
 
 # Prerequisite
 NVIDIA 4090
